@@ -1,0 +1,103 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'Dharma Gothic C Heavy';
+    src: url('../fonts/DharmaGothicC-Heavy.ttf') format('truetype');
+    font-family: 'Helvetica75';
+    src: url('../fonts/Helvetica_Bold.ttf') format('truetype');
+}
+
+/* =============== reset ================ */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, table, tr, td, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+
+/* =============== common ================ */
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Pretendard', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #275a54;
+    text-decoration: none;
+}
+#wrap {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =============== header ================ */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.gnbMenu {
+    display: flex;
+}
+
+.gnbMenu li {
+    margin: 0 20px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'Helvetica75';
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 70px;
+    font-family: 'Dharma Gothic C Heavy';
+
+}
+
+/* =============== footer ================ */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(70, 70, 70);
+    font-size: 12px;
+    padding: 10px;
+}
+
+.footer-left {
+    display: flex;
+}
+.footer-left img {
+    margin: 0 5px;
+}
+
+.footer-right {
+    display: flex;
+}
+.footer-right div {
+    margin-right: 5px;
+}
+.footer-right :nth-child(3) {
+    margin-right: 0;
+}

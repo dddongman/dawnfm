@@ -1,0 +1,104 @@
+section .album {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.album {
+    display: none;
+}
+.album.active {
+    display:block
+}
+
+.album-cover {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: album 1s .5s forwards;
+}
+.album-cover img {
+    width: 900px;
+    display: block;
+}
+.album-text {
+    font-size: 18px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: album-text 1s 1s forwards;
+}
+.album-text p {
+    line-height: 1.5rem;
+}
+.starring {
+    color: #c4c4c4;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 18%;
+    left: 60%;
+    background-color: #292929;
+    border: 1px solid #c4c4c4;
+    border-radius: 45px;
+    z-index: 2;
+    opacity: 0;
+    overflow: hidden;
+    animation: album-text 1s 1s forwards;
+    transition: all .6s;
+}
+.starring.active {
+    width: 500px;
+    height: 600px;
+}
+.starring h3 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 9px;
+}
+.starring-inner {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.starring-inner img {
+    width: 90px;
+    border-radius: 50%;
+}
+.starring-inner h3 {
+    color: #fff;
+    font-size: 26px;
+    font-style: normal;
+    margin-top: 0;
+}
+.starring-inner div {
+    width: 400px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c4c4c4;
+}
+
+.album-text img {
+    width: 200px;
+}
+
+@keyframes album {
+    100% {
+        left: 35%;
+    }
+}
+
+@keyframes album-text {
+    100% {
+        opacity: 1;
+    }
+}
